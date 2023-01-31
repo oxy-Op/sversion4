@@ -7,7 +7,7 @@ import requests
 from itertools import cycle
 import random
 
-Status = cycle(["OxyOp","MAGNUM OP ","I am oxy","Join magnum","Hm shadi ussi se krte jo salvar khushi se khole"])
+Status = cycle(["OxyOp","MAGNUM OP ","I am oxy","Join magnum"])
 
 """
 Choose what you want in your status - Under Quotes 
@@ -82,7 +82,7 @@ async def cheatowo(ctx,amount):
 @cheatowo.error
 async def err(ctx,error):
     if isinstance(error,commands.MissingRequiredArgument):
-        await ctx.send(':x: Please Enter Amount To Flip ,NOTE :- It is a infinity process , you can stop it by o!stop owo')
+        await ctx.send(':x: Please Enter Amount To Flip ,NOTE :- It is an infinite process , you can stop it by o!stop owo')
         
 
 @bot.command()
